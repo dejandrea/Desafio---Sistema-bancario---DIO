@@ -36,13 +36,13 @@ while True:
         else:
             valor = float(input("Informe o valor a ser sacado:"))
             if valor <= 0:
-                print('\nValor inválido!')
+                print('\n Operação inválida!\n Valor inválido!')
                 time.sleep(3)
             elif valor > saldo:
                 print("Operação não realizada por falta de saldo")
                 time.sleep(3)
             elif valor > 500:
-                print("Valor máximo de R$500,00 por saque")
+                print("Falha na operação! \nValor máximo de R$500,00 por saque")
                 time.sleep(3)
             else:
                 num_saques += 1
